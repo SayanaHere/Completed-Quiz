@@ -483,88 +483,42 @@ footer {
         #section-2 #section-2-container aside {
           height: 600px; } }
 /* =============
-    Section 3
+    section 3
 ============= */
-#section-3 {
-  display: grid; }
-  #section-3 #section-title {
-    margin-top: 44px; }
-    #section-3 #section-title h1 {
-      text-align: center; }
-  #section-3 ul {
-    margin-top: 6px;
-    display: grid;
-    grid-template-rows: repeat(3, 436px);
-    grid-gap: 22px;
-    margin: 10px; }
-    #section-3 ul li {
-      background-color: #EEEEEE; }
-    #section-3 ul #card-1 {
+#section-3 #section-3-grid {
+  padding-bottom: 40px; }
+  #section-3 #section-3-grid aside img {
+    width: 100%; }
+  @media (min-width: 992px) {
+    #section-3 #section-3-grid {
       display: grid;
-      grid-template-rows: 200px auto;
-      grid-template-areas: "card-photo"  "card-content"; }
-      #section-3 ul #card-1 #photo-1 {
-        grid-area: card-photo;
-        background-image: url("../img/section-3/gallery-1.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 200px; }
-      #section-3 ul #card-1 > div {
-        grid-area: card-content;
-        margin: 0 20px; }
-        #section-3 ul #card-1 > div h1 {
-          text-align: center;
-          font-size: 1.5rem; }
-        #section-3 ul #card-1 > div h6 {
-          text-align: justify;
-          font-size: 1rem;
-          font-weight: 500; }
-        #section-3 ul #card-1 > div p {
-          text-align: left;
-          font-size: 0.875rem; }
-    #section-3 ul #card-2 {
-      display: grid;
-      grid-template-rows: 200px auto;
-      grid-template-areas: "card-photo"  "card-content"; }
-      #section-3 ul #card-2 #photo-2 {
-        grid-area: card-photo;
-        background-image: url("../img/section-3/gallery-2.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 200px; }
-      #section-3 ul #card-2 > div {
-        grid-area: card-content;
-        margin: 0 20px; }
-        #section-3 ul #card-2 > div h1 {
-          text-align: center;
-          font-size: 1.5rem; }
-        #section-3 ul #card-2 > div h6 {
-          text-align: justify;
-          font-size: 1rem;
-          font-weight: 500; }
-        #section-3 ul #card-2 > div p {
-          text-align: left;
-          font-size: 0.875rem; }
-    #section-3 ul #card-3 {
-      display: grid;
-      grid-template-rows: 200px auto;
-      grid-template-areas: "card-photo"  "card-content"; }
-      #section-3 ul #card-3 #photo-3 {
-        grid-area: card-photo;
-        background-image: url("../img/section-3/gallery-3.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 200px; }
-      #section-3 ul #card-3 > div {
-        grid-area: card-content;
-        margin: 0 20px; }
-        #section-3 ul #card-3 > div h1 {
-          text-align: center;
-          font-size: 1.5rem; }
-        #section-3 ul #card-3 > div h6 {
-          text-align: justify;
-          font-size: 1rem;
-          font-weight: 500; }
-        #section-3 ul #card-3 > div p {
-          text-align: left;
-          font-size: 0.875rem; }
+      grid-template-areas: ". c1 c2 c3 .";
+      grid-template-columns: 15px auto auto auto 15px;
+      column-gap: 20px; } }
+  #section-3 #section-3-grid #section-3-container1 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #d3d3d3;
+    grid-area: c1; }
+    #section-3 #section-3-grid #section-3-container1 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }
+  #section-3 #section-3-grid #section-3-container2 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #d3d3d3;
+    grid-area: c2; }
+    #section-3 #section-3-grid #section-3-container2 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }
+  #section-3 #section-3-grid #section-3-container3 {
+    text-align: center;
+    margin: 0px 0px 100px;
+    padding-bottom: 20px;
+    background-color: #d3d3d3;
+    grid-area: c3; }
+    #section-3 #section-3-grid #section-3-container3 h2 {
+      font-family: 'Merriweather', serif;
+      font-size: 2em; }

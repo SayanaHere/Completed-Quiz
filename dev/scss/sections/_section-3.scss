@@ -1,147 +1,74 @@
 /* =============
-    Section 3
+    section 3
 ============= */
 #section-3 {
-    display: grid;
-    // grid-template-columns: 10px auto 10px;
-    
-    #section-title {
-        margin-top: 44px; 
-        h1 {
+    #section-3-grid {
+        aside {
+            img {
+                width: 100%;
+            }
+        }
+
+        padding-bottom: 40px;
+
+        @include lg {
+
+            display: grid;
+            grid-template-areas: ". c1 c2 c3 .";
+            grid-template-columns: 15px auto auto auto 15px;
+            column-gap: 20px;
+
+        }
+
+
+        #section-3-container1 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
+            }
+
             text-align: center;
-        }
-    }
-    ul {
-        margin-top: 6px;
-        display: grid;
-        grid-template-rows: repeat(3, 436px);
-        grid-gap: 22px;
-        margin: 10px;
-
-        li {
-            // display: block;
-            // margin-left: auto;
-            // margin-right: auto;
-            background-color: $section-2-gray;
-            // margin: 10px;
-        }
-
-        #card-1 {
-            display: grid;
-            grid-template-rows: 200px auto;
-            grid-template-areas: "card-photo" 
-                                  "card-content";
-
-            
-            #photo-1 {
-                grid-area: card-photo;
-                background-image: url('../img/section-3/gallery-1.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 200px;
-            }
-
-
-            >div {
-                grid-area: card-content;
-                margin: 0 20px;
-
-                h1 {
-                    text-align: center;
-                    font-size: rem-calc(24);
-                }
-    
-                h6 {
-                    text-align: justify;
-                    font-size: rem-calc(16);
-                    font-weight: 500;
-                }
-    
-                p {
-                    text-align: left;
-                    font-size: rem-calc(14);
-                }
-            }
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $gray;
+            grid-area: c1;
 
         }
 
-        #card-2 {
-            display: grid;
-            grid-template-rows: 200px auto;
-            grid-template-areas: "card-photo" 
-                                  "card-content";
 
-            
-            #photo-2 {
-                grid-area: card-photo;
-                background-image: url('../img/section-3/gallery-2.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 200px;
+        #section-3-container2 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
             }
 
+            text-align: center;
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $gray;
 
-            >div {
-                grid-area: card-content;
-                margin: 0 20px;
-
-                h1 {
-                    text-align: center;
-                    font-size: rem-calc(24);
-                }
-    
-                h6 {
-                    text-align: justify;
-                    font-size: rem-calc(16);
-                    font-weight: 500;
-                }
-    
-                p {
-                    text-align: left;
-                    font-size: rem-calc(14);
-                }
-            }
+            grid-area: c2;
 
         }
 
-        #card-3 {
-            display: grid;
-            grid-template-rows: 200px auto;
-            grid-template-areas: "card-photo" 
-                                  "card-content";
 
-            
-            #photo-3 {
-                grid-area: card-photo;
-                background-image: url('../img/section-3/gallery-3.jpg');
-                background-size: cover;
-                background-repeat: no-repeat;
-                height: 200px;
+        #section-3-container3 {
+
+            h2 {
+                font-family: 'Merriweather', serif;
+                font-size: 2em;
             }
 
-
-            >div {
-                grid-area: card-content;
-                margin: 0 20px;
-
-                h1 {
-                    text-align: center;
-                    font-size: rem-calc(24);
-                }
-    
-                h6 {
-                    text-align: justify;
-                    font-size: rem-calc(16);
-                    font-weight: 500;
-                }
-    
-                p {
-                    text-align: left;
-                    font-size: rem-calc(14);
-                }
-            }
+            text-align: center;
+            margin: 0px 0px 100px;
+            padding-bottom: 20px;
+            background-color: $gray;
+            grid-area: c3;
 
         }
+
     }
 
 }
